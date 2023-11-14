@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FRONTEND JOB</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav class="top-menu">
+			<a class="logo" href="index.html"><img src="img/logo.svg"></a>
+			<ul class="main-menu responsive_main_menu">
+				<li><a href="">Поиск вакансий</a></li>
+				<li><a href="">Избранные вакансии</a></li>
+			</ul>
+			<div class="menu-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
+	</header>
+
+
+	
+	<nav id="filter">
+		<ul id="filter_menu">
+			<li id='filter_city'>
+				<input id="city" size="10" placeholder="Москва" autocomplete="off">
+			</li>
+			<li id='filter_schedule'>
+				<a >Гибкий график</a>
+				<ul class="filter_submenu">
+					<li><a href="">Полный день</a></li>
+					<li><a href="">Гибкий график</a></li>
+					<li><a href="">Удаленная работа</a></li>
+				</ul>
+			</li>
+			<li id='filter_employment'>
+				<a >Частичная занятость</a>
+				<ul class="filter_submenu">
+					<li><a href="">Полная занятость</a></li>
+					<li><a href="">Частичная занятость</a></li>
+					<li><a href="">Проектная работа</a></li>
+					<li><a href="">Стажировка</a></li>
+				</ul>
+			</li>
+			<li id='filter_experience'>
+				<a >От 1 года до 3 лет</a>
+				<ul class="filter_submenu">
+					<li><a href="">Нет опыта</a></li>
+					<li><a href="">От 1 года до 3 лет</a></li>
+					<li><a href="">От 3 до 6 лет</a></li>
+					<li><a href="">Более 6 лет</a></li>
+				</ul>
+			</li>
+			<li id='filter_salary'>
+				<input id="salary" size="7" inputmode="numeric" placeholder="150 000" pattern="[0-9]{0,6}">
+				<label>руб.</label>
+				<!-- <select id='currency'>
+				  <option>BYN</option>
+				  <option>Дол</option>
+				  <option>Евр</option>
+				</select> -->
+				<!-- <ul class="filter_submenu">
+					<li><a href="">Полный день</a></li>
+					<li><a href="">Гибкий график</a></li>
+					<li><a href="">Удаленная работа</a></li>
+				</ul> -->
+			</li>
+			<li id='filter_filters'>
+				<a >Фильтры</a>
+				<ul class="filter_submenu"> <!-- responsive_filter_menu -->
+			 		<li>
+						<label>Доход</label><br>
+						<input id="filter_submenu_salary" size="7" inputmode="numeric" placeholder="150 000" pattern="[0-9]{0,6}">
+					</li> 
+					<li>
+						<label>График работы</label>
+						<ul>
+							<li><a href="">Полный день</a></li>
+							<li><a href="">Гибкий график</a></li>
+							<li><a href="">Удаленная работа</a></li>
+						</ul>
+					</li>
+					<li>
+						<label>Тип занятость</label>
+						<ul>
+							<li><a href="">Полная занятость</a></li>
+							<li><a href="">Частичная занятость</a></li>
+							<li><a href="">Проектная работа</a></li>
+							<li><a href="">Стажировка</a></li>
+						</ul>
+					</li>
+					<li>
+						<label>Опыт работы</label>
+						<ul>
+							<li><a href="">Нет опыта</a></li>
+							<li><a href="">От 1 года до 3 лет</a></li>
+							<li><a href="">От 3 до 6 лет</a></li>
+							<li><a href="">Более 6 лет</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			
+		</ul>
+		<button id='filter_search'>Поиск</button>
+	</nav>
+	<main>
+		
+		<div class="list-vacancies">
+			<section class="vacancy" data-id="vacancy-1">
+				<div class="vacancy-logo"><img src="img/vacancy-logo1.png"></div>
+				<div class="vacancy-info">
+					<p class="company-name">Интернет Люди</p>
+					<p class="vacancy-name">Front-end Разработчиĸ</p>
+					<p class="vacancy-city">Москва</p>
+					<p class="vacancy-skills">
+						<span>jQuery</span>
+						<span>JavaScript</span>
+						<span>CSS3</span>
+						<span>React</span>
+						<span>Git</span>
+						<span>Vue</span>
+						<span>Flexbox</span>
+						<span>HTML5</span>
+					</p>
+				</div>
+				<div class="vacancy-like">
+					<div class="like"></div>
+					<p class="vacancy-date">29/03/2021</p>
+				</div>
+				<div class='break'></div>
+			</section>
+			<section class="vacancy" data-id="vacancy-2">
+				<div class="vacancy-logo"></div>
+				<div class="vacancy-info">
+					<p class="company-name">GOOD CALL DEVELOPMENT</p>
+					<p class="vacancy-name">React Developer (Middle/Senior)</p>
+					<p class="vacancy-city">Москва</p>
+					<p class="vacancy-skills">
+						<span>jQuery</span>
+						<span>JavaScript</span>
+						<span>CSS3</span>
+						<span>React</span>
+						<span>Git</span>
+					</p>
+				</div>
+				<div class="vacancy-like">
+					<div class="like"></div>
+					<p class="vacancy-date">29/03/2021</p>
+				</div>
+				<div class='break'></div>
+			</section>
+			<section class="vacancy" data-id="vacancy-3">
+				<div class="vacancy-logo"><img src="img/company-logo3.png"></div>
+				<div class="vacancy-info">
+					<p class="company-name">Winfinity</p>
+					<p class="vacancy-name">Frontend developer (React)</p>
+					<p class="vacancy-city">Москва</p>
+					<p class="vacancy-skills">
+						<span>jQuery</span>
+						<span>JavaScript</span>
+					</p>
+				</div>
+				<div class="vacancy-like">
+					<div class="like"></div>
+					<p class="vacancy-date">29/03/2021</p>
+				</div>
+				<div class='break'></div>
+			</section>
+			<section class="vacancy" data-id="vacancy-4">
+				<div class="vacancy-logo"><img src="img/vacancy-logo4.png"></div>
+				<div class="vacancy-info">
+					<p class="company-name">Diagnocat</p>
+					<p class="vacancy-name">Frontend developer</p>
+					<p class="vacancy-city">Москва</p>
+					<p class="vacancy-skills">
+						<span>jQuery</span>
+						<span>JavaScript</span>
+						<span>CSS3</span>
+						<span>React</span>
+						<span>Git</span>
+						<span>Vue</span>
+						<span>Flexbox</span>
+						<span>HTML5</span>
+					</p>
+				</div>
+				<div class="vacancy-like">
+					<div class="like"></div>
+					<p class="vacancy-date">29/03/2021</p>
+				</div>
+				<div class='break'></div>
+			</section>
+			<section class="vacancy" data-id="vacancy-1">
+				<div class="vacancy-logo"><img src="img/vacancy-logo1.png"></div>
+				<div class="vacancy-info">
+					<p class="company-name">Интернет Люди</p>
+					<p class="vacancy-name">Front-end Разработчиĸ</p>
+					<p class="vacancy-city">Москва</p>
+					<p class="vacancy-skills">
+						<span>jQuery</span>
+						<span>JavaScript</span>
+						<span>CSS3</span>
+						<span>React</span>
+						<span>Git</span>
+						<span>Vue</span>
+						<span>Flexbox</span>
+						<span>HTML5</span>
+					</p>
+				</div>
+				<div class="vacancy-like">
+					<div class="like"></div>
+					<p class="vacancy-date">29/03/2021</p>
+				</div>
+				<div class='break'></div>
+			</section>
+			<section class="vacancy" data-id="vacancy-2">
+				<div class="vacancy-logo"></div>
+				<div class="vacancy-info">
+					<p class="company-name">GOOD CALL DEVELOPMENT</p>
+					<p class="vacancy-name">React Developer (Middle/Senior)</p>
+					<p class="vacancy-city">Москва</p>
+					<p class="vacancy-skills">
+						<span>jQuery</span>
+						<span>JavaScript</span>
+						<span>CSS3</span>
+						<span>React</span>
+						<span>Git</span>
+					</p>
+				</div>
+				<div class="vacancy-like">
+					<div class="like"></div>
+					<p class="vacancy-date">29/03/2021</p>
+				</div>
+				<div class='break'></div>
+			</section>
+			<section class="vacancy" data-id="vacancy-3">
+				<div class="vacancy-logo"><img src="img/company-logo3.png"></div>
+				<div class="vacancy-info">
+					<p class="company-name">Winfinity</p>
+					<p class="vacancy-name">Frontend developer (React)</p>
+					<p class="vacancy-city">Москва</p>
+					<p class="vacancy-skills">
+						<span>jQuery</span>
+						<span>JavaScript</span>
+					</p>
+				</div>
+				<div class="vacancy-like">
+					<div class="like"></div>
+					<p class="vacancy-date">29/03/2021</p>
+				</div>
+				<div class='break'></div>
+			</section>
+			<section class="vacancy" data-id="vacancy-4">
+				<div class="vacancy-logo"><img src="img/vacancy-logo4.png"></div>
+				<div class="vacancy-info">
+					<p class="company-name">Diagnocat</p>
+					<p class="vacancy-name">Frontend developer</p>
+					<p class="vacancy-city">Москва</p>
+					<p class="vacancy-skills">
+						<span>jQuery</span>
+						<span>JavaScript</span>
+						<span>CSS3</span>
+						<span>React</span>
+						<span>Git</span>
+						<span>Vue</span>
+						<span>Flexbox</span>
+						<span>HTML5</span>
+					</p>
+				</div>
+				<div class="vacancy-like">
+					<div class="like"></div>
+					<p class="vacancy-date">29/03/2021</p>
+				</div>
+				<div class='break'></div>
+			</section>
+		</div>
+		<div class="vacancy-about">
+			<div id="vacancy-1" class="vacancy-block">
+				<div class="vacancy-header">
+					<div class="vacancy-logo"><img src="img/company-logo1.png"></div>
+
+					<div class="vacancy-info">
+						<p class="vacancy-name">Front-end Разработчиĸ</p>
+						<p>
+							<span class="company-name">Интернет Люди</span>
+							<span class="company-name-line">&#x399;</span>
+							<span class="vacancy-city">Москва</span>
+						</p> 
+					</div>
+					<div class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class='break'></div>
+				</div>
+				<p class="salary">От 150 000 до 300 000 руб.</p><hr> 
+				<div class="vacancy-description"><p>Мы, <span class="bold">Winfinity</span>, занимаемся разработкой инновационных решений в области игорно-развлекательного контента. </p>
+
+					<p>Для создания наших продуктов используются передовые технологии, среди которых: Computer Vision, Unreal Engine, Ultra Low Latency Video Streaming. У нас очень крутой и суперсовременный технопарк - от камер и света, до графических карт, которые почти невозможно найти.</p>
+
+					<p>Сегодня мы на стадии активного развития. Мы создаём масштабный, технологически сложный и в тоже время очень интересный, глобальный проект - частью которого можете стать Вы!</p>
+
+					<p class="bold">И если у Вас есть:</p>
+
+					<p>опыт коммерческой разработки на JavaScript от 2 лет;<br>
+					опыт коммерческой разработки на React от 2 лет;<br>
+					опыт работы в команде с git;<br>
+					опыт работы с любым сборщиком (webpack, gulp и т.д.).<br>
+					…то Вы именно тот, кого мы ищем!</p>
+
+					<p class="bold">Обязательные знания:</p>
+
+					<p>Typescript;<br>
+					Webpack;<br>
+					Styled-components;<br>
+					GraphQL;<br>
+					Express;<br>
+					MongoDB;<br>
+					WebSockets;<br>
+					Docker.</p>
+					<p>После испытательного срока <span class="bold">мы предлагаем:</span></p>
+
+					<p>возможную релокацию в столицу Латвии с помощью в оформлении всех необходимых документов;<br>
+					бесплатную стоянку рядом с современным офисом в центре города;<br>
+					медицинскую страховку;<br>
+					абонемент в спортивный зал.</p>
+					<p>Наша сила - в отсутствии бюрократии, легаси кода, чайка менеджмента, бизнеса, который уже не знает, чего хочет.</p>
+
+					<p>Мы за нестандартные идеи, профессиональный и творческий подход, отличные отношения в коллективе и результат.</p>
+				</div>
+
+			</div>
+			<div id="vacancy-2" class="vacancy-block">
+				<div class="vacancy-header">
+					<div class="vacancy-logo"></div><!--  <div class='break'></div> -->
+					<div class="vacancy-info">
+						<p class="vacancy-name">React Developer (Middle/Senior)</p>
+						<p>
+							<span class="company-name">GOOD CALL DEVELOPMENT</span>
+							<span class="company-name-line">&#x399;</span>
+							<span class="vacancy-city">Москва</span>
+						</p>
+					</div>
+					<div class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class='break'></div>
+				</div>
+				<p class="salary">От 150 000 до 300 000 руб.</p><hr>
+				<div class="vacancy-description"><p>Мы, <span class="bold">Winfinity</span>, занимаемся разработкой инновационных решений в области игорно-развлекательного контента. </p>
+
+					<p>Для создания наших продуктов используются передовые технологии, среди которых: Computer Vision, Unreal Engine, Ultra Low Latency Video Streaming. У нас очень крутой и суперсовременный технопарк - от камер и света, до графических карт, которые почти невозможно найти.</p>
+
+					<p>Сегодня мы на стадии активного развития. Мы создаём масштабный, технологически сложный и в тоже время очень интересный, глобальный проект - частью которого можете стать Вы!</p>
+
+					<p class="bold">И если у Вас есть:</p>
+
+					<p>опыт коммерческой разработки на JavaScript от 2 лет;<br>
+					опыт коммерческой разработки на React от 2 лет;<br>
+					опыт работы в команде с git;<br>
+					опыт работы с любым сборщиком (webpack, gulp и т.д.).<br>
+					…то Вы именно тот, кого мы ищем!</p>
+
+					<p class="bold">Обязательные знания:</p>
+
+					<p>Typescript;<br>
+					Webpack;<br>
+					Styled-components;<br>
+					GraphQL;<br>
+					Express;<br>
+					MongoDB;<br>
+					WebSockets;<br>
+					Docker.</p>
+					<p>После испытательного срока <span class="bold">мы предлагаем:</span></p>
+
+					<p>возможную релокацию в столицу Латвии с помощью в оформлении всех необходимых документов;<br>
+					бесплатную стоянку рядом с современным офисом в центре города;<br>
+					медицинскую страховку;<br>
+					абонемент в спортивный зал.</p>
+					<p>Наша сила - в отсутствии бюрократии, легаси кода, чайка менеджмента, бизнеса, который уже не знает, чего хочет.</p>
+
+					<p>Мы за нестандартные идеи, профессиональный и творческий подход, отличные отношения в коллективе и результат.</p>
+				</div>
+			</div>
+			<div id="vacancy-3" class="vacancy-block">
+				<div class="vacancy-header">
+					<div class="vacancy-logo"><img src="img/company-logo3.png"></div>
+					<div class="vacancy-info">
+						<p class="vacancy-name">Frontend developer (React)</p>
+						<p>
+							<span class="company-name">Winfinity</span>
+							<span class="company-name-line">&#x399;</span>
+							<span class="vacancy-city">Москва</span>
+						</p>
+					</div>
+					<div class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class='break'></div>
+				</div>
+				<p class="salary">От 150 000 до 300 000 руб.</p><hr>
+				<div class="vacancy-description"><p>Мы, <span class="bold">Winfinity</span>, занимаемся разработкой инновационных решений в области игорно-развлекательного контента. </p>
+
+					<p>Для создания наших продуктов используются передовые технологии, среди которых: Computer Vision, Unreal Engine, Ultra Low Latency Video Streaming. У нас очень крутой и суперсовременный технопарк - от камер и света, до графических карт, которые почти невозможно найти.</p>
+
+					<p>Сегодня мы на стадии активного развития. Мы создаём масштабный, технологически сложный и в тоже время очень интересный, глобальный проект - частью которого можете стать Вы!</p>
+
+					<p class="bold">И если у Вас есть:</p>
+
+					<p>опыт коммерческой разработки на JavaScript от 2 лет;<br>
+					опыт коммерческой разработки на React от 2 лет;<br>
+					опыт работы в команде с git;<br>
+					опыт работы с любым сборщиком (webpack, gulp и т.д.).<br>
+					…то Вы именно тот, кого мы ищем!</p>
+
+					<p class="bold">Обязательные знания:</p>
+
+					<p>Typescript;<br>
+					Webpack;<br>
+					Styled-components;<br>
+					GraphQL;<br>
+					Express;<br>
+					MongoDB;<br>
+					WebSockets;<br>
+					Docker.</p>
+					<p>После испытательного срока <span class="bold">мы предлагаем:</span></p>
+
+					<p>возможную релокацию в столицу Латвии с помощью в оформлении всех необходимых документов;<br>
+					бесплатную стоянку рядом с современным офисом в центре города;<br>
+					медицинскую страховку;<br>
+					абонемент в спортивный зал.</p>
+					<p>Наша сила - в отсутствии бюрократии, легаси кода, чайка менеджмента, бизнеса, который уже не знает, чего хочет.</p>
+
+					<p>Мы за нестандартные идеи, профессиональный и творческий подход, отличные отношения в коллективе и результат.</p>
+				</div>
+			</div>
+			<div id="vacancy-4" class="vacancy-block">
+				<div class="vacancy-header">
+					<div class="vacancy-logo"><img src="img/company-logo4.png"></div>
+					<div class="vacancy-info">
+						<p class="vacancy-name">Frontend developer</p>
+						<p>
+							<span class="company-name">Diagnocat</span>
+							<span class="company-name-line">&#x399;</span>
+							<span class="vacancy-city">Москва</span>
+						</p>
+					</div>
+					<div class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class='break'></div>
+				</div>
+				<p class="salary">От 150 000 до 300 000 руб.</p><hr>
+				<div class="vacancy-description"><p>Мы, <span class="bold">Winfinity</span>, занимаемся разработкой инновационных решений в области игорно-развлекательного контента. </p>
+
+					<p>Для создания наших продуктов используются передовые технологии, среди которых: Computer Vision, Unreal Engine, Ultra Low Latency Video Streaming. У нас очень крутой и суперсовременный технопарк - от камер и света, до графических карт, которые почти невозможно найти.</p>
+
+					<p>Сегодня мы на стадии активного развития. Мы создаём масштабный, технологически сложный и в тоже время очень интересный, глобальный проект - частью которого можете стать Вы!</p>
+
+					<p class="bold">И если у Вас есть:</p>
+
+					<p>опыт коммерческой разработки на JavaScript от 2 лет;<br>
+					опыт коммерческой разработки на React от 2 лет;<br>
+					опыт работы в команде с git;<br>
+					опыт работы с любым сборщиком (webpack, gulp и т.д.).<br>
+					…то Вы именно тот, кого мы ищем!</p>
+
+					<p class="bold">Обязательные знания:</p>
+
+					<p>Typescript;<br>
+					Webpack;<br>
+					Styled-components;<br>
+					GraphQL;<br>
+					Express;<br>
+					MongoDB;<br>
+					WebSockets;<br>
+					Docker.</p>
+					<p>После испытательного срока <span class="bold">мы предлагаем:</span></p>
+
+					<p>возможную релокацию в столицу Латвии с помощью в оформлении всех необходимых документов;<br>
+					бесплатную стоянку рядом с современным офисом в центре города;<br>
+					медицинскую страховку;<br>
+					абонемент в спортивный зал.</p>
+					<p>Наша сила - в отсутствии бюрократии, легаси кода, чайка менеджмента, бизнеса, который уже не знает, чего хочет.</p>
+
+					<p>Мы за нестандартные идеи, профессиональный и творческий подход, отличные отношения в коллективе и результат.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="js/main.js"></script> 
+</body>
+</html>
