@@ -1,105 +1,97 @@
 /*Base*/
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-	font-size: 10px;
+    font-size: 10px;
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
-	background: #FAFAFA;
-	font-size: 14px;
-	color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    background: #FAFAFA;
+    font-size: 14px;
+    color: #000000;
 
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 ul {
-	list-style-type: none;
-	margin-block-start: 0;
+    list-style-type: none;
+    margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
 }
 
 button {
-	border: none;
-	background: none;
+    border: none;
+    background: none;
 }
 
-/*p {
-	margin: 0;
-}*/
 
 /*Header*/
 
 header {
-	position: fixed;
-	width: 100%;
-	height: 7.4rem;
-	background: #FFFFFF;
-	padding: 0 14rem;
-	z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 7.4rem;
+    background: #FFFFFF;
+    padding: 0 14rem;
+    z-index: 10;
 }
 
 .top-menu {
-	height: 100%;
-	width: 100%;
-	display: flex; 
-	/*flex-direction: row;*/
-	align-items: center;
-	/*justify-content: space-between;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
-	margin-right: 8.5rem;
-	font-weight: 900;
-	font-size: 20px;
-	color: #000000;
+    margin-right: 8.5rem;
+    font-weight: 900;
+    font-size: 20px;
+    color: #000000;
 }
 
 .logo span {
-	color: #0070FB;
+    color: #0070FB;
 }
 
 .main-menu li {
-	display: inline-block;
-	margin: 0 4.5rem;
-	font-weight: bold;
+    display: inline-block;
+    margin: 0 4.5rem;
+    font-weight: bold;
 }
 
 .main-menu li a {
-	color: #6B8397;
+    color: #6B8397;
 }
 
-.main-menu li > a:active, 
-.main-menu li > a:hover{
-	color: #0070FB;
+.main-menu li > a:active,
+.main-menu li > a:hover {
+    color: #0070FB;
 }
 
 
 .menu-btn {
-	display: none;
+    display: none;
 }
 
-/*.main-menu {
-	display: block;
-}*/
 /* Filter */
 
 #filter {
-	position: fixed;
-	width: inherit;
-	height: 6rem;
-	background: #FFFFFF;
-	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03);
-	border-radius: 10px; 
-	right: 14rem;
+    position: fixed;
+    width: inherit;
+    height: 6rem;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    right: 14rem;
     top: 10.8rem;
     left: 14rem;
     display: flex;
@@ -109,720 +101,669 @@ header {
 }
 
 #filter #filter_menu {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
-#filter_menu>li {
-	font-weight: bold;
-	font-size: 12px;
-	color: #49627E;
-	line-height: 60px;
-	/*position: relative;*/
-	background-repeat: no-repeat;
-  background-position: 2.5rem center;
+#filter_menu > li {
+    font-weight: bold;
+    font-size: 12px;
+    color: #49627E;
+    line-height: 60px;
+    background-repeat: no-repeat;
+    background-position: 2.5rem center;
 }
 
 
-#filter_menu>li:not(:last-of-type)  {
-	padding-left: 6.5rem;
-	display: block;
-	position: relative;
+#filter_menu > li:not(:last-of-type) {
+    padding-left: 6.5rem;
+    display: block;
+    position: relative;
 }
 
 
 #filter_city {
-	background-image: url(../img/icon-1.svg);
-}
-#filter_schedule {
-	background-image: url(../img/icon-2.svg);
-}
-#filter_employment {
-	background-image: url(../img/icon-3.svg);
-}
-#filter_experience {
-	background-image: url(../img/icon-4.svg);
-}
-#filter_salary {
-	background-image: url(../img/icon-5.svg);
-}
-#filter #filter_search {
-	font-size: 14px;
-	color: #ffffff;
-	background-color:  #0070FB;
-	border-radius: 0 1rem 1rem 0;
-	padding: 0 2rem;
+    background-image: url(../img/icon-1.svg);
 }
 
-#filter_filters{
-	display: none;
+#filter_schedule {
+    background-image: url(../img/icon-2.svg);
+}
+
+#filter_employment {
+    background-image: url(../img/icon-3.svg);
+}
+
+#filter_experience {
+    background-image: url(../img/icon-4.svg);
+}
+
+#filter_salary {
+    background-image: url(../img/icon-5.svg);
+}
+
+#filter #filter_search {
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #0070FB;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 2rem;
+}
+
+#filter_filters {
+    display: none;
 }
 
 #filter_filters .filter_submenu label {
-		font-weight: bold;
-		line-height: 2.6;
-		display: inline-block;
+    font-weight: bold;
+    line-height: 2.6;
+    display: inline-block;
     margin-bottom: 0.5rem;
 }
 
 #filter_filters .filter_submenu {
-	display: block;
-	background: #ffffff;
+    display: block;
+    background: #ffffff;
 }
 
-#filter_filters .filter_submenu>li {
-	margin-left: 40%;
-	margin-top: 1.2rem;
+#filter_filters .filter_submenu > li {
+    margin-left: 40%;
+    margin-top: 1.2rem;
 }
 
 #filter_menu input {
-	font-weight: bold;
-  font-size: 12px;
-  color: #49627E;
-	border: none;
-	outline: 0;
-  outline-offset: 0;
-	height: 4rem;
-	padding: 0;
+    font-weight: bold;
+    font-size: 12px;
+    color: #49627E;
+    border: none;
+    outline: 0;
+    outline-offset: 0;
+    height: 4rem;
+    padding: 0;
 }
 
 #filter_menu input::placeholder {
-		font-weight: bold;
+    font-weight: bold;
     font-size: 12px;
     color: #49627E;
 }
 
-#filter_menu input:focus::-webkit-input-placeholder
- {
-  color: transparent
+#filter_menu input:focus::-webkit-input-placeholder {
+    color: transparent
 }
 
 #filter_menu input:focus::-moz-placeholder {
-  color: transparent
+    color: transparent
 }
 
 #filter_menu input:focus:-moz-placeholder {
-  color: transparent
+    color: transparent
 }
 
 #filter_menu input:focus:-ms-input-placeholder {
-  color: transparent
+    color: transparent
 }
 
 
 .filter_submenu {
-	font-size: 1.2rem;
-	background-color: #ffffff;
-	border-bottom-right-radius: 0.5em;
-	border-bottom-left-radius: 0.5em;
-	padding: 2rem 1rem 2rem 2.5rem;
-	position: absolute;
-	width: 200px; /*!important;*/
-	visibility: hidden;
-	opacity: 0;
-  transform: translate(-50%, 20px);
-  transition: .3s;
-  left: 60%;
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    padding: 2rem 1rem 2rem 2.5rem;
+    position: absolute;
+    width: 20rem;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .3s;
+    left: 60%;
 
 }
 
 #filter_filters .filter_submenu {
-	left: 0;
-	transform: translate(0, 20px);
+    left: 0;
+    transform: translate(0, 20px);
 }
 
 #filter_employment .filter_submenu {
-	width: 25rem!important;
+    width: 25rem !important;
 }
 
-#filter_menu>li:first-of-type .filter_submenu {
-	left: 70%;
+#filter_menu > li:first-of-type .filter_submenu {
+    left: 70%;
 }
-
-/*#filter_menu>li:last-of-type .filter_submenu {
-	left: -25%;
-}*/
 
 .filter_submenu li {
-			font-weight: normal;
-			color: #49627E;
-			line-height: 1;
+    font-weight: normal;
+    color: #49627E;
+    line-height: 1;
 }
 
-#filter_menu>li:hover .filter_submenu {
-  visibility: visible;
-  opacity: 1;
-  transform: translate(-50%, 0);
+#filter_menu > li:hover .filter_submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
 }
 
 #filter_filters:hover .filter_submenu {
-	transform: translate(0, 0)!important;
+    transform: translate(0, 0) !important;
 }
 
 
 .filter_submenu a {
-	position: relative;
-	color: #49627E;
-	line-height: 2.7rem;
-	margin-left: 2.8rem;
-	margin-right: 1rem;
+    position: relative;
+    color: #49627E;
+    line-height: 2.7rem;
+    margin-left: 2.8rem;
+    margin-right: 1rem;
 }
 
 .filter_submenu a:before {
-	content: "";
-	width: 1.4rem;
-	height: 1.4rem;
-	border-radius: 50%;
-	border: 0.1rem solid #E5E5E5;
-	  
-	/* background: #0070FB; */
-	position: absolute;
-	left: -2.5rem;
-	top: 0px;
+    content: "";
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    border: 0.1rem solid #E5E5E5;
+
+    position: absolute;
+    left: -2.5rem;
+    top: 0px;
 }
 
 .filter_submenu a:hover:before,
-.filter_submenu a:active:before{
-	content: "";
-	width: 0.6rem;
-	height: 0.6rem;
-	background: #fff;
-	position: absolute;
-	border: 0.5rem solid #0070FB;
-	z-index: 2;
+.filter_submenu a:active:before {
+    content: "";
+    width: 0.6rem;
+    height: 0.6rem;
+    background: #fff;
+    position: absolute;
+    border: 0.5rem solid #0070FB;
+    z-index: 2;
 }
-
 
 
 /* Main */
 
 main {
-	width: 100%;
-	padding: 20.2rem 14rem 0;
-	background-color: #FAFAFA;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	z-index: 1;
+    width: 100%;
+    padding: 20.2rem 14rem 0;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 1;
 }
 
 .vacancy,
 .vacancy-block {
-	background-color: #FFFFFF;
-	box-shadow: 0 0.3rem 1.5rem rgba(0, 0, 0, 0.03);
-	border-radius: 1rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 0.3rem 1.5rem rgba(0, 0, 0, 0.03);
+    border-radius: 1rem;
 }
 
 .list-vacancies {
-	width: 40%;
+    width: 40%;
 }
 
 .vacancy {
-	min-height: 13.3rem;
-	display: flex;
-	/*justify-content: space-between;*/
-	padding: 2rem 2rem 0.8rem;
-	margin-bottom: 1.5rem;
+    min-height: 13.3rem;
+    display: flex;
+    padding: 2rem 2rem 0.8rem;
+    margin-bottom: 1.5rem;
 }
 
 .vacancy:hover {
-	border-left: 1.1rem solid  #0070FB;
-	padding-left: 0.9rem;
+    border-left: 1.1rem solid #0070FB;
+    padding-left: 0.9rem;
 }
 
 .hover {
-	border-left: 1.1rem solid  #0070FB;
-	padding-left: 0.9rem;
+    border-left: 1.1rem solid #0070FB;
+    padding-left: 0.9rem;
 }
 
 .vacancy-logo {
-	background: #F7F8F9;
-	border-radius: 10px;
-	margin-right: 1.5rem;
+    background: #F7F8F9;
+    border-radius: 10px;
+    margin-right: 1.5rem;
 }
 
 .vacancy-logo,
 .vacancy-logo img {
-	width: 6.8rem;
-	height: 4.9rem;
+    width: 6.8rem;
+    height: 4.9rem;
 }
 
 .company-name,
 .vacancy-city {
-	font-weight: bold;
-	font-size: 1rem;
-	line-height: 1.2rem;
-	color:  #9AAAB5;
-	margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #9AAAB5;
+    margin: 0;
 }
 
 .vacancy-name {
-	font-weight: bold;
-	line-height: 1.7rem;
-	margin: 0.5rem 0;
+    font-weight: bold;
+    line-height: 1.7rem;
+    margin: 0.5rem 0;
 }
 
 .vacancy-city {
-	margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .vacancy-skills {
-	margin: 0;
+    margin: 0;
 }
 
 .vacancy-skills span {
-	display: inline-block;
-	height: 2rem;
-	background: #F7F8F9;
-	border-radius: 0.4rem;
-	padding: 0.5rem 0.8rem;
-	margin-top: 0.5rem;
-	margin-right: 0.5rem;
-	font-weight: bold;
-	font-size: 0.9rem;
-	line-height: 1.1rem;
-	color: #95A5B2;
+    display: inline-block;
+    height: 2rem;
+    background: #F7F8F9;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    color: #95A5B2;
 }
 
 .vacancy-like {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: space-between;
-	align-items: flex-end;
-	flex-grow: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-grow: 1;
 }
 
 .like {
-	height: 1.9rem;
-	width: 2rem;
-	background-image: url(../img/like.png);
+    height: 1.9rem;
+    width: 2rem;
+    background-image: url(../img/like.png);
 }
 
-/*.like:hover, */.clicked {
-	background-position: right center;
+/*.like:hover, */
+.clicked {
+    background-position: right center;
 }
 
 .vacancy-date {
-	margin: 0;
-	font-weight: 500;
-	font-size: 0.9rem;
-	line-height: 1.1rem;
-	color: #A1AEB9;
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    color: #A1AEB9;
 }
 
-/*.vacancy-about {
-	width: 47%;
-    position: fixed;
-    right: 14rem;
-}*/
-
 .vacancy-header {
-	display: flex;
-	align-items: center;
-	margin: 2.3rem 3rem 0;
+    display: flex;
+    align-items: center;
+    margin: 2.3rem 3rem 0;
 }
 
 .vacancy-header p {
-	margin: 0;
+    margin: 0;
 }
 
 .vacancy-about .vacancy-logo,
-.vacancy-about .vacancy-logo img{
-	width: 13rem;
-	height: 8.4rem;
+.vacancy-about .vacancy-logo img {
+    width: 13rem;
+    height: 8.4rem;
 }
 
 .vacancy-about .vacancy-logo {
-	margin-right: 5rem;
+    margin-right: 5rem;
 }
 
 .vacancy-about .vacancy-name {
-	font-weight: bold;
-	font-size: 2rem;
-	line-height: 2.4rem;
-	margin-bottom: 0.8rem;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-bottom: 0.8rem;
 }
 
 .company-name-line {
-	font-size: 1.4rem;
-	font-weight: normal;
-	margin: 0 0.5rem;
-	color:  #9AAAB5;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 0 0.5rem;
+    color: #9AAAB5;
 }
 
 .salary {
-	font-weight: bold;
-	font-size: 2rem;
-	line-height: 2.4rem;
-	margin: 2.7rem 3rem 3.7rem;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin: 2.7rem 3rem 3.7rem;
 }
 
 hr {
-	width: 100%;
-	color: #F9F9F9;
-	border: none; 
-    background-color: #F9F9F9; 
+    width: 100%;
+    color: #F9F9F9;
+    border: none;
+    background-color: #F9F9F9;
     height: 2px;
 }
 
 .vacancy-description {
-	margin: 3rem 3rem 3rem 4rem;
+    margin: 3rem 3rem 3rem 4rem;
 }
 
 .bold {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .vacancy-block {
-	/*display: none;*/
-	position: fixed;
-	width: 47%;
-	height: 54rem;
-    /*right: 14rem;*/
+    position: fixed;
+    width: 47%;
+    height: 54rem;
     overflow-y: scroll;
 }
 
 .vacancy-block::-webkit-scrollbar {
-	width: 0.8rem;
+    width: 0.8rem;
 }
 
 .vacancy-block::-webkit-scrollbar-track {
-	background: #ffffff;
-	/*box-shadow: 0 0 0.2rem #E1E1E1 inset;*/
-	border: 0.1rem solid #FAFAFA;
-	border-radius: 0.8rem;
+    background: #ffffff;
+    border: 0.1rem solid #FAFAFA;
+    border-radius: 0.8rem;
 }
 
 .vacancy-block::-webkit-scrollbar-thumb {
-	background: #E1E1E1;
-	border-radius: 0.8rem;
-	border: 0.3rem solid #E1E1E1;
+    background: #E1E1E1;
+    border-radius: 0.8rem;
+    border: 0.3rem solid #E1E1E1;
 }
 
 .vacancy-about {
-	    width: 47%;
-
-	        /*display: none;*/
-    position: fixed; 
+    width: 47%;
+    position: fixed;
     height: 54rem;
     right: 14rem;
     overflow-y: scroll;
 }
 
 
-
-
 @media (max-width: 1440px) {
 
+    header {
+        padding: 0 10.7rem;
+    }
 
-header {
-    padding: 0 10.7rem;
-}
+    .logo {
+        margin-right: 7rem;
+    }
 
-.logo {
-   	margin-right: 7rem;
-}
+    #filter {
+        left: 10.7rem;
+        right: 10.7rem;
+    }
 
-#filter {
-    left: 10.7rem;
-    right: 10.7rem;
-    /*z-index: 10;*/
-}
+    main {
+        padding-left: 10.7rem;
+        padding-right: 10.7rem;
+    }
 
+    .main-menu li {
+        margin: 0;
+    }
 
+    .main-menu li:not(:last-of-type) {
+        margin-right: 8.4rem;
+    }
 
-main {
-	padding-left: 10.7rem;
-	padding-right: 10.7rem;
-	/*justify-content: center;*/
-}
+    .vacancy-about {
+        right: 10.7rem;
+        overflow: hidden;
+    }
 
-
-.main-menu li {
-	margin: 0;
-}
-
-.main-menu li:not(:last-of-type) {
-	margin-right: 8.4rem;
-}
-
-
-.vacancy-about {
-	/*width: auto;*/
-	/*width: 57%;*/
-    /*margin: auto;*/
-    right: 10.7rem;
-    /*position: relative;*/
-    overflow: hidden;
-}
-
-.vacancy-block {
-	width: auto;
-	position: relative;
-}
-
-
+    .vacancy-block {
+        width: auto;
+        position: relative;
+    }
 }
 
 
 @media (max-width: 1135px) {
 
-#filter_menu #filter_schedule,
-#filter_menu #filter_employment,
-#filter_menu #filter_experience {
-	display: none;
+    #filter_menu #filter_schedule,
+    #filter_menu #filter_employment,
+    #filter_menu #filter_experience {
+        display: none;
+    }
+
+    #filter_menu #filter_filters {
+        display: inline-block;
+    }
+
+    .vacancy-about {
+        width: inherit;
+        position: static;
+    }
+
+    .list-vacancies {
+        width: inherit;
+        display: none;
+    }
+
+    .vacancy-block .menu-btn span:nth-of-type(1) {
+        display: none;
+    }
+
+    .vacancy-block .menu-btn span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+    }
+
+    .vacancy-block .menu-btn span:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+        height: 0.2rem;
+    }
+
+    .vacancy-block .menu-btn {
+        width: 2rem;
+        height: 2rem;
+        align-self: flex-start;
+        margin-left: auto;
+        display: block;
+    }
+
+    .vacancy-block .menu-btn span {
+        background-color: #49627E;
+        width: 2rem;
+    }
 }
 
-#filter_menu #filter_filters {
-	display: inline-block;
-}
-
-.vacancy-about {
-/*	display: none;*/
-	width: inherit;
-		position: static;
-}
-
-.list-vacancies {
-	width: inherit;
-	display: none;
-}
-
-/*кнопка закрыть для блока вакансии*/
-.vacancy-block .menu-btn span:nth-of-type(1) {
-  display: none;
-}
-.vacancy-block .menu-btn span:nth-of-type(2) {
-  top: 50%;
-  transform: translate(-50%, 0%) rotate(45deg);  
-}
-.vacancy-block .menu-btn span:nth-of-type(3) {
-  top: 50%;
-  transform: translate(-50%, 0%) rotate(-45deg); 
-  height: 0.2rem;
-}
-
-.vacancy-block .menu-btn {
-	width: 2rem;
-	height: 2rem;
-	align-self: flex-start; 
-	margin-left: auto;
-	display: block;
-}
-
-.vacancy-block .menu-btn span {
-	background-color: #49627E;
-	width: 2rem;
-}
-
-/*.vacancy-info {
-	margin-top: 2.5rem;
-}*/
-
-}
-
-	/* Гамбургер иконка */
+/* Гамбургер иконка */
 .menu-btn {
-	width: 3rem;
-	height: 3rem;
-	position: relative;
-	z-index: 8;
-	display: none;
-	overflow: hidden;
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    z-index: 8;
+    display: none;
+    overflow: hidden;
 }
 
 .menu-btn span {
-	width: 3rem;
-	height: 0.2rem;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: #222222;
-	transition: all 0.5s;
+    width: 3rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222222;
+    transition: all 0.5s;
 }
 
 /*Tablet*/
 
 @media (max-width: 845px) {
-	.main-menu {
-		display: none;
-	}
+    .main-menu {
+        display: none;
+    }
 
-.top-menu {
-	justify-content: space-between;
-}
+    .top-menu {
+        justify-content: space-between;
+    }
 
-.menu-btn {
-	display: inline-block;
-}
+    .menu-btn {
+        display: inline-block;
+    }
 
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
 
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+        height: 0.3rem;
+    }
 
-.menu-btn span:nth-of-type(2) {
-	top: calc(50% - 5px);
-}
-.menu-btn span:nth-of-type(3) {
-	top: calc(50% + 5px);
-	height: 0.3rem;
-}
+    .menu-btn.active_menu span:nth-of-type(1) {
+        display: none;
+    }
 
-/* Меняем гамбургер иконку, когда меню открыто */
-.menu-btn.active_menu span:nth-of-type(1) {
-  display: none;
-}
-.menu-btn.active_menu span:nth-of-type(2) {
-  top: 50%;
-  transform: translate(-50%, 0%) rotate(45deg);  
-}
-.menu-btn.active_menu span:nth-of-type(3) {
-  top: 50%;
-  transform: translate(-50%, 0%) rotate(-45deg); 
-  height: 0.2rem;
-}
+    .menu-btn.active_menu span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+    }
 
-/* Меню, которое будет появляться */
+    .menu-btn.active_menu span:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+        height: 0.2rem;
+    }
 
+    .responsive_main_menu {
+        position: fixed;
+        display: block;
+        z-index: 12;
+        top: 1%;
+        left: 1%;
+        width: 98%;
+        background: #FFFFFF;
+        border-radius: 2%;
+        transform: translateY(-120%);
+        transition: transform 0.5s;
+        padding: 2.9rem 0 4.8rem;
+        margin-top: 3.5rem;
+        text-align: center;
+    }
 
-.responsive_main_menu {
-	position: fixed;
-	display: block;
-	z-index: 12;
-	top: 1%;
-	left: 1%;
-	width: 98%;
-	/*height: 98%;*/
-	/*padding: 15px;*/
-  	background: #FFFFFF;
-  	border-radius: 2%;
-	transform: translateY(-120%);
-	transition: transform 0.5s; 
-	padding: 2.9rem 0 4.8rem;
-    margin-top: 3.5rem;
-	text-align: center;
-}
+    .responsive_main_menu li:not(:last-of-type) {
+        margin: 1.5rem 4.5rem 3.8rem;
+    }
 
-.responsive_main_menu li:not(:last-of-type) {
-	    margin: 1.5rem 4.5rem 3.8rem;
-}
+    .responsive_main_menu.active_menu {
+        transform: translateY(3.5rem);
+    }
 
-.responsive_main_menu.active_menu {
-	transform: translateY(3.5rem);
-
-}
-
-.responsive_main_menu li {
-	
-	list-style-type: none;
-	display: block;
-	margin: 1.5rem 4.5rem;
-}
-
-
-
+    .responsive_main_menu li {
+        list-style-type: none;
+        display: block;
+        margin: 1.5rem 4.5rem;
+    }
 
 }
 
 
 /*@media (max-width: 834px) {
-
-
-
-
-
-
-
 }*/
 
 .break {
-	display: none;
+    display: none;
 }
 
 #filter_filters .filter_submenu li:first-of-type {
-	display: none;
+    display: none;
 }
 
 @media (max-width: 755px) {
 
-	header {
-	    padding: 0 3.7rem;
-	}
-
-	.logo img {
-		width: 12.8rem;
-	}
-
-	#filter {
-	    left: 3.7rem;
-	    right: 3.7rem;
-	}
-
-	#filter a,
-	#filter #filter_search {
-		font-size: 10px;
-	}
-
-	#filter_menu #filter_salary {
-		display: none;
-	}
-
-	#filter_menu #filter_city {
-	    padding-left: 4.2rem;
-	    background-position: 1.5rem center;
-	    background-size: 1.2rem;
-	}
-
-	#filter_menu #filter_filters {
-		padding-left: 0;
-	}
-
-	main {
-	    padding-left: 3.7rem; 
-	    padding-right: 3.7rem;
+    header {
+        padding: 0 3.7rem;
     }
 
-	.vacancy,
-	.vacancy-header {
-		flex-wrap: wrap;
-	}
+    .logo img {
+        width: 12.8rem;
+    }
+
+    #filter {
+        left: 3.7rem;
+        right: 3.7rem;
+    }
+
+    #filter a,
+    #filter #filter_search {
+        font-size: 10px;
+    }
+
+    #filter_menu #filter_salary {
+        display: none;
+    }
+
+    #filter_menu #filter_city {
+        padding-left: 4.2rem;
+        background-position: 1.5rem center;
+        background-size: 1.2rem;
+    }
+
+    #filter_menu #filter_filters {
+        padding-left: 0;
+    }
+
+    main {
+        padding-left: 3.7rem;
+        padding-right: 3.7rem;
+    }
+
+    .vacancy,
+    .vacancy-header {
+        flex-wrap: wrap;
+    }
 
     .vacancy-date {
-    	display: none;
+        display: none;
     }
 
     .vacancy-info {
-    	order: 1;
-    	margin-top: 2.5rem;
+        order: 1;
+        margin-top: 2.5rem;
     }
 
     .break {
-    	display: block;
-		flex-basis: 100%;
-		height: 0;
-	}
+        display: block;
+        flex-basis: 100%;
+        height: 0;
+    }
 
-#filter_menu #filter_submenu_salary {
-	border: 1px solid #9AAAB5;
-	border-radius: 0.5rem;
-	    width: 16.5rem;
-    height: 3rem;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-    font-weight: normal;
-}
+    #filter_menu #filter_submenu_salary {
+        border: 1px solid #9AAAB5;
+        border-radius: 0.5rem;
+        width: 16.5rem;
+        height: 3rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        font-weight: normal;
+    }
 
-#filter_menu #filter_submenu_salary::placeholder {
-	font-weight: normal;
-}
+    #filter_menu #filter_submenu_salary::placeholder {
+        font-weight: normal;
+    }
 
-#filter_filters .filter_submenu li:first-of-type {
-	display: inline-block;
-}
+    #filter_filters .filter_submenu li:first-of-type {
+        display: inline-block;
+    }
 
-#filter_filters .filter_submenu>li {
-	margin-left: 20%;
-}
+    #filter_filters .filter_submenu > li {
+        margin-left: 20%;
+    }
 }
 
 
@@ -830,39 +771,39 @@ main {
 
 @media (max-width: 375px) {
 
-	body {
-		font-size: 10px;
-	}
+    body {
+        font-size: 10px;
+    }
 
-  #filter_filters .filter_submenu>li {
-		margin-left: 0;
-	}
+    #filter_filters .filter_submenu > li {
+        margin-left: 0;
+    }
 
-#filter_menu #filter_filters {
-	padding-right: 1rem;
-}
+    #filter_menu #filter_filters {
+        padding-right: 1rem;
+    }
 
-.vacancy-block .menu-btn {
-	right: 1rem;
-  top: 2.3rem;  
-  position: absolute;
-}
+    .vacancy-block .menu-btn {
+        right: 1rem;
+        top: 2.3rem;
+        position: absolute;
+    }
 
-.vacancy-about .vacancy-name,
-.salary {
-	font-size: 1.5rem;
-    line-height: 1.8rem;
-}
+    .vacancy-about .vacancy-name,
+    .salary {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
 
-.salary {
-	    margin: 1.5rem 3rem 2.1rem;
-}
+    .salary {
+        margin: 1.5rem 3rem 2.1rem;
+    }
 
-.vacancy-description {
-    margin: 2rem 3rem 3rem 3rem;
-  }
+    .vacancy-description {
+        margin: 2rem 3rem 3rem 3rem;
+    }
 
-        
+
 }
 
 

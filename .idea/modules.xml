@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Creativia/Creativia/.idea/Creativia.iml" filepath="$PROJECT_DIR$/../Creativia/Creativia/.idea/Creativia.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/FRONTEND JOB_1.iml" filepath="$PROJECT_DIR$/.idea/FRONTEND JOB_1.iml" />
     </modules>
   </component>

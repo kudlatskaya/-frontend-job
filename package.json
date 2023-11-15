@@ -1,0 +1,10 @@
+{
+  "homepage": "https://kudlatskaya.github.io/frontend-job",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  },
+  "scripts": {
+    "predeploy": "rm -rf build && npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}

@@ -4,20 +4,10 @@ for (let button of document.querySelectorAll(".like")) {
 
   button.addEventListener("click", function () {
     this.classList.toggle("clicked");
-
-    /*останавливаем всплытие, чтобы при клике на button не отображалось
-    описание функции*/
     event.stopPropagation();
   });
 
 }
-
-
-
-// let htmlFontSize = parseInt(window.getComputedStyle(document.body).getPropertyValue('font-size'));
-// vacancy_about.style.height = (document.documentElement.clientHeight - htmlFontSize * 20.2) + 'px';
-
-
 
 /*responsive menu*/
 
@@ -28,9 +18,6 @@ menuBtn.addEventListener('click', function(){
   menuBtn.classList.toggle('active_menu');
   main_menu.classList.toggle('active_menu');
 });
-
-
-/*пробелы в поле для зп*/
 
 let salaryInput = document.getElementById('salary');
 
@@ -53,30 +40,11 @@ function resizeFilters() {
     let filtersSubmenu = document.querySelector("#filter_filters .filter_submenu");
 
     filtersSubmenu.style.width = filterWidth + "px";
-
-    // let filterMenuParams = filterMenu.getBoundingClientRect();
-
-    // let filterTop = filterMenuParams.top;
-    // filtersSubmenu.style.top = filterTop + filterMenuParams.height + "px";
-
-    // let filterLeft = filterMenuParams.right;
-    // filtersSubmenu.style.right = filterLeft + "px";
-    // let filterX = filterMenuParams.clientX;
-    // let filterY = filterMenuParams.clientY;
-
-    // filtersSubmenu.clientX = 0;
-    // filtersSubmenu.clientY = 0;
 }
 
 resizeFilters();
 
 window.addEventListener('resize', resizeFilters);
-
-
-/*
-vacancy - все вакансии
-target.closest('.vacancy') - вакансия, по которой кликнули
-*/
 
 let vacancy_about = document.querySelector(".vacancy-about");
 let list_vacancies = document.querySelector(".list-vacancies");
@@ -101,6 +69,5 @@ list_vacancies.addEventListener('click', function(event) {
 
 }
 
-// if(window.screen.width < size) 
 
 
